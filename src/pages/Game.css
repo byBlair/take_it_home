@@ -1,0 +1,282 @@
+/* =========================
+   전체 화면
+========================= */
+
+.game-page {
+  width: 390px;
+  height: 844px;
+
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  background-color: #ffffff;
+}
+
+
+/* =========================
+   상단
+========================= */
+
+.game-header {
+  position: relative;
+
+  height: 195px;
+
+  box-sizing: border-box;
+
+  padding-top: 55px;
+
+  background-color: #ffffff;
+
+  text-align: center;
+}
+
+
+/* =========================
+   상단 제목
+========================= */
+
+.game-top-bar {
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* =========================
+   뒤로가기
+========================= */
+
+.back-button {
+  position: absolute;
+
+  left: 18px;
+
+  border: none;
+
+  padding: 0;
+
+  background: transparent;
+
+  color: #000000;
+
+  font-size: 36px;
+
+  font-weight: 300;
+
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   제목
+========================= */
+
+.game-title {
+  color: #000000;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+
+/* =========================
+   타이머
+========================= */
+
+.timer {
+  margin-top: 18px;
+
+  color: #06533f;
+
+  font-size: 52px;
+
+  font-weight: 900;
+
+  line-height: 1;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+/* =========================
+   5초 이하
+========================= */
+
+.timer.warning {
+  color: #ff3b30;
+
+  animation:
+    timerPulse 0.7s infinite;
+}
+
+
+@keyframes timerPulse {
+
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* =========================
+   레벨
+========================= */
+
+.level {
+  margin-top: 8px;
+
+  color: #ff7135;
+
+  font-size: 20px;
+
+  font-weight: 900;
+}
+
+
+/* =========================
+   게임판
+========================= */
+
+.game-board {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  grid-template-rows:
+    1fr 1fr;
+
+  width: 100%;
+
+  height:
+    calc(844px - 195px);
+
+  overflow: hidden;
+
+  touch-action: none;
+}
+
+
+/* =========================
+   존 공통
+========================= */
+
+.country {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 32px;
+
+  font-weight: 900;
+
+  user-select: none;
+}
+
+
+/* =========================
+   왼쪽 위
+========================= */
+
+.zone-0 {
+  background-color: #123cff;
+
+  color:
+    rgba(255, 255, 255, 0.45);
+}
+
+
+/* =========================
+   오른쪽 위
+========================= */
+
+.zone-1 {
+  background-color: #057052;
+
+  color:
+    rgba(255, 255, 255, 0.4);
+}
+
+
+/* =========================
+   왼쪽 아래
+========================= */
+
+.zone-2 {
+  background-color: #ff5b0b;
+
+  color:
+    rgba(255, 255, 255, 0.4);
+}
+
+
+/* =========================
+   오른쪽 아래
+========================= */
+
+.zone-3 {
+  background-color: #cfff00;
+
+  color:
+    rgba(80, 120, 0, 0.4);
+}
+
+
+/* =========================
+   음식 접시
+========================= */
+
+.game-food {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 190px;
+  height: 190px;
+
+  object-fit: contain;
+
+  z-index: 10;
+
+  cursor: grab;
+
+  user-select: none;
+
+  -webkit-user-drag: none;
+
+  touch-action: none;
+
+  will-change: transform;
+}
+
+
+/* =========================
+   드래그 중
+========================= */
+
+.game-food.dragging {
+  cursor: grabbing;
+}

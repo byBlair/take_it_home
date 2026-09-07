@@ -1,0 +1,151 @@
+.home {
+  position: relative;
+
+  width: 100%;
+  max-width: 390px;
+  min-height: 100vh;
+
+  margin: 0 auto;
+  overflow: hidden;
+
+  /* 실제 배경 이미지 사용 */
+  background-color: #06533F;
+  background-image: url("/images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* =====================
+   음식 이미지
+===================== */
+
+.food {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.food-top {
+  width: 67%;
+  top: 0px;
+  left: 0px;
+}
+
+.food-bottom {
+  width: 67%;
+  right: 0px;
+  bottom: 0px;
+}
+
+
+/* =====================
+   중앙 영역
+===================== */
+
+.home-content {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 35px;
+}
+
+
+/* =====================
+   실제 로고 이미지
+===================== */
+
+.home-logo {
+  width: 210px;
+  height: auto;
+
+  display: block;
+}
+
+
+/* =====================
+   GAME START
+===================== */
+
+.start-button {
+  width: 200px;
+  height: 52px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #d7ff00;
+
+  color: #000;
+
+  font-size: 17px;
+  font-weight: 900;
+
+  cursor: pointer;
+}
+
+
+/* =====================
+   Ranking
+===================== */
+
+.ranking-button {
+  position: absolute;
+
+  left: 25px;
+  bottom: 45px;
+
+  z-index: 3;
+
+  padding: 8px 16px;
+
+  border: none;
+  border-radius: 30px;
+
+  background: #000;
+  color: #d7ff00;
+
+  font-size: 15px;
+  font-weight: 900;
+
+  cursor: pointer;
+}
+
+
+/* =====================
+   도움말 ?
+===================== */
+
+.help-button {
+  position: absolute;
+
+  top: 30px;
+  right: 20px;
+
+  z-index: 3;
+
+  width: 34px;
+  height: 34px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #000;
+  color: #fff;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  cursor: pointer;
+}

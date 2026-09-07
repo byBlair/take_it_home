@@ -1,0 +1,58 @@
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background: #444;
+  font-family: Arial, sans-serif;
+}
+
+.game-container {
+  width: 100%;
+  max-width: 430px;
+  min-height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+.country-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 400px;
+  margin-top: 30px;
+}
+
+.country-grid button {
+  border: 1px solid #222;
+  background: white;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.food {
+  margin-top: 30px;
+}
+
+.plate {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  background: #eee;
+}
+
+.plate span {
+  font-size: 70px;
+}
