@@ -93,7 +93,7 @@
 
 .timer {
   margin-top: 18px;
-
+  font-family: "BBH Hegarty", sans-serif;
   color: #06533f;
 
   font-size: 52px;
@@ -142,7 +142,7 @@
 
 .level {
   margin-top: 8px;
-
+  font-family: "BBH Hegarty", sans-serif;
   color: #ff7135;
 
   font-size: 20px;

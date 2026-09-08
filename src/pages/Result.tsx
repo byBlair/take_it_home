@@ -1,31 +1,84 @@
 import { useLocation, useNavigate } from "react-router-dom";
+import "./Result.css";
 
-interface ResultState {
-  score: number;
-}
+type ResultState = {
+  level: number;
+  correctCount: number;
+};
 
 function Result() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const state = location.state as ResultState | null;
+  const state =
+    location.state as ResultState | null;
 
-  const score = state?.score ?? 0;
+  const correctCount =
+    state?.correctCount ?? 0;
 
   return (
-    <div>
-      <h1>RESULT</h1>
+    <main className="result-page">
+      <header className="result-header">
+        <button
+          className="result-back-button"
+          onClick={() => navigate("/game")}
+          aria-label="뒤로 돌아가기"
+        >
+          ‹
+        </button>
 
-      <h2>{score}점</h2>
+        <h1 className="result-title">
+          SCORE
+        </h1>
+      </header>
+      
+      {/* back 이미지 */}
+      <img
+        src="/images/pizza_italy.png"
+        alt=""
+        className="result-food result-pizza"
+      />
 
-      <button onClick={() => navigate("/game")}>
-        다시 하기
+
+      {/* 가운데 점수 접시 */}
+      <section className="score-area">
+        <div className="score-plate">
+          <img
+            src="/images/score_plate.png"
+            alt="Score plate"
+            className="score-plate-image"
+          />
+
+          <div className="score-text">
+            <span className="score-label">
+              score
+            </span>
+
+            <strong className="score-number">
+              {correctCount}
+            </strong>
+          </div>
+        </div>
+      </section>
+
+      {/* back 이미지 */}
+      <img
+        src="/images/gyoja_asia.png"
+        alt=""
+        className="result-food result-gyoja"
+      />
+      <img
+        src="/images/chicken.png"
+        alt=""
+        className="result-food result-chicken"
+      />
+      <button
+        className="ranking-result-button"
+        onClick={() => navigate("/ranking")}
+      >
+        내 순위 보러가기
       </button>
-
-      <button onClick={() => navigate("/")}>
-        홈으로
-      </button>
-    </div>
+    </main>
   );
 }
 

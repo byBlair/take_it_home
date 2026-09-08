@@ -84,7 +84,7 @@
 
   border: none;
   border-radius: 6px;
-
+  font-family: "BBH Hegarty", sans-serif;
   background: #d7ff00;
 
   color: #000;
@@ -102,7 +102,7 @@
 
 .ranking-button {
   position: absolute;
-
+  font-family: "BBH Hegarty", sans-serif;
   left: 25px;
   bottom: 45px;
 
@@ -129,7 +129,7 @@
 
 .help-button {
   position: absolute;
-
+  font-family: "BBH Hegarty", sans-serif;
   top: 30px;
   right: 20px;
 
