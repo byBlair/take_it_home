@@ -58,7 +58,7 @@
   flex-direction: column;
   align-items: center;
 
-  gap: 35px;
+  gap: 32px;
 }
 
 
@@ -67,9 +67,8 @@
 ===================== */
 
 .home-logo {
-  width: 210px;
-  height: auto;
-
+  width: 217.76px;
+  height: 172.96px;
   display: block;
 }
 
@@ -80,18 +79,19 @@
 
 .start-button {
   width: 200px;
-  height: 52px;
+  height: 50px;
 
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
   font-family: "BBH Hegarty", sans-serif;
   background: #d7ff00;
 
   color: #000;
 
-  font-size: 17px;
-  font-weight: 900;
-
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 3.5%;
   cursor: pointer;
 }
 
@@ -102,23 +102,25 @@
 
 .ranking-button {
   position: absolute;
-  font-family: "BBH Hegarty", sans-serif;
+  width: 104.77;
+  height: 33.68px;
   left: 25px;
-  bottom: 45px;
-
+  top: 770px;
   z-index: 3;
+  border-radius: 35.37px;
 
-  padding: 8px 16px;
-
+  padding: 8.84px 11.89px 8.84px 11.89px;
+  gap: 8.84px;
   border: none;
-  border-radius: 30px;
 
   background: #000;
   color: #d7ff00;
 
-  font-size: 15px;
-  font-weight: 900;
-
+  font-size: 16.64px;
+  font-weight: 400;
+  line-height: 15.94px;
+  letter-spacing: 3.5%;
+  font-family: "BBH Hegarty", sans-serif;
   cursor: pointer;
 }
 
@@ -129,14 +131,12 @@
 
 .help-button {
   position: absolute;
-  font-family: "BBH Hegarty", sans-serif;
-  top: 30px;
-  right: 20px;
-
+  top: 70px;
+  left: 336.4px;
   z-index: 3;
 
-  width: 34px;
-  height: 34px;
+  width: 33.6px;
+  height: 33.6px;
 
   border: none;
   border-radius: 50%;
@@ -144,8 +144,10 @@
   background: #000;
   color: #fff;
 
-  font-size: 20px;
-  font-weight: bold;
-
+  font-size: 16.64px;
+  line-height: 15.92px;
+  letter-spacing: 3.5%;
+  font-family: "BBH Hegarty", sans-serif;
+  font-weight: 400;
   cursor: pointer;
 }

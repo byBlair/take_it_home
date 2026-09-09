@@ -5,7 +5,7 @@ import "./Game.css";
 type Zone =
   | "INDIA"
   | "ASIA"
-  | "AMERICA"
+  | "U.S.A"
   | "KOREA"
   | "ITALY"
   | "JAPAN";
@@ -24,7 +24,7 @@ type Food = {
 const allZones: Zone[] = [
   "INDIA",
   "ASIA",
-  "AMERICA",
+  "U.S.A",
   "KOREA",
   "ITALY",
   "JAPAN",
@@ -57,7 +57,7 @@ const foods: Food[] = [
     id: 4,
     name: "Honey",
     image: "/images/honey_america.png",
-    answer: "AMERICA",
+    answer: "U.S.A",
   },
   {
     id: 5,
@@ -489,21 +489,21 @@ function Game() {
       <section className="game-header">
 
         <div className="game-top-bar">
-
           <button
             className="back-button"
-            onClick={() =>
-              navigate("/")
-            }
+            onClick={() => navigate("/")}
             aria-label="홈으로 돌아가기"
           >
-            ‹
+            <img
+              src="/images/back.png"
+              alt=""
+              className="back-icon"
+            />
           </button>
 
           <span className="game-title">
             Drag Dish To Home!
           </span>
-
         </div>
 
         {/* 타이머 */}

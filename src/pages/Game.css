@@ -25,7 +25,7 @@
 
   box-sizing: border-box;
 
-  padding-top: 55px;
+  padding-top: 44px;
 
   background-color: #ffffff;
 
@@ -39,11 +39,10 @@
 
 .game-top-bar {
   position: relative;
-
   display: flex;
-
   justify-content: center;
   align-items: center;
+
 }
 
 
@@ -53,26 +52,29 @@
 
 .back-button {
   position: absolute;
+  left: 16px;
+  top: 6px;
+  width: 6px;
+  height: 12px;
 
-  left: 18px;
-
-  border: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
   padding: 0;
-
+  border: none;
   background: transparent;
-
-  color: #000000;
-
-  font-size: 36px;
-
-  font-weight: 300;
-
-  line-height: 1;
 
   cursor: pointer;
 }
 
+.back-icon {
+  width: 6px;
+  height: 12px;
+
+  object-fit: contain;
+  display: block;
+}
 
 /* =========================
    제목
@@ -80,10 +82,11 @@
 
 .game-title {
   color: #000000;
-
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 600;
   font-size: 16px;
-
-  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: -0.01em;
 }
 
 
@@ -92,15 +95,20 @@
 ========================= */
 
 .timer {
-  margin-top: 18px;
+  width: 171px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 8px;
+
   font-family: "BBH Hegarty", sans-serif;
   color: #06533f;
-
-  font-size: 52px;
-
-  font-weight: 900;
-
-  line-height: 1;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.01em;
 
   transition:
     color 0.2s ease,
@@ -114,25 +122,6 @@
 
 .timer.warning {
   color: #ff3b30;
-
-  animation:
-    timerPulse 0.7s infinite;
-}
-
-
-@keyframes timerPulse {
-
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.08);
-  }
-
-  100% {
-    transform: scale(1);
-  }
 }
 
 
@@ -141,13 +130,20 @@
 ========================= */
 
 .level {
-  margin-top: 8px;
+  width: 58px;
+  height: 28px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
   font-family: "BBH Hegarty", sans-serif;
-  color: #ff7135;
-
+  color: #FF812F;
   font-size: 20px;
-
-  font-weight: 900;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.01em;
 }
 
 
@@ -183,15 +179,13 @@
 
 .country {
   display: flex;
-
   justify-content: center;
-
   align-items: center;
-
-  font-size: 32px;
-
-  font-weight: 900;
-
+  font-size: 40px;
+  font-family: "BBH Hegarty", sans-serif;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.01em;
   user-select: none;
 }
 
@@ -254,21 +248,14 @@
   left: 50%;
   top: 50%;
 
-  width: 190px;
-  height: 190px;
-
+  width: 200.38px;
+  height: 200.375px;
   object-fit: contain;
-
   z-index: 10;
-
   cursor: grab;
-
   user-select: none;
-
   -webkit-user-drag: none;
-
   touch-action: none;
-
   will-change: transform;
 }
 
