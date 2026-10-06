@@ -1,7 +1,7 @@
 .ranking-page {
   position: relative;
   width: 390px;
-  min-height: 844px;
+  min-height: 100vh;
 
   margin: 0 auto;
   padding-bottom: 35px;

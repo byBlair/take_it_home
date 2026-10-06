@@ -24,7 +24,11 @@ function Result() {
           onClick={() => navigate("/game")}
           aria-label="뒤로 돌아가기"
         >
-          ‹
+            <img
+              src="/images/back.png"
+              alt=""
+              className="result-back-icon"
+            />
         </button>
 
         <h1 className="result-title">

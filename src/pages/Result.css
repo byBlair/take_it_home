@@ -3,7 +3,7 @@
   position: relative;
 
   width: 390px;
-  height: 844px;
+  height: 100vh;
 
   margin: 0 auto;
 
@@ -226,4 +226,34 @@ letter-spacing: -0.01em;
   font-weight: 700;
 
   cursor: pointer;
+}
+
+.result-back-button {
+  position: absolute;
+
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.result-back-icon {
+  width: 6px;
+  height: 12px;
+  
+  object-fit: contain;
+  display: block;
+  filter: brightness(0) invert(1)
 }
